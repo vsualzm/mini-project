@@ -41,7 +41,7 @@ func main() {
 		os.Getenv("PG_PORT"),
 		os.Getenv("PG_USER"),
 		os.Getenv("PG_PASSWORD"),
-		os.Getenv("PG_NAME"),
+		os.Getenv("PG_DATABASE"),
 	)
 
 	DB, err = sql.Open("postgres", psqlInfo)
